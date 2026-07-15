@@ -33,7 +33,7 @@
 
 </form>
 
-<div class="countDown">Offer <span class="timer"></span> expires within </div>
+<div class="countDown">Offerb <span class="timer"></span> expires within </div>
 
 
 <script type="text/javascript">function leftTimer(){var e=new Date((new Date).getTime()+864e5),t=new Date(e.getFullYear()+"-"+checkTime(e.getMonth()+1)+"-"+checkTime(e.getDate()))-new Date,n=parseInt(t/1e3/60/60/24,10),r=parseInt(t/1e3/60/60%24,10),o=parseInt(t/1e3/60%60,10),u=parseInt(t/1e3%60,10);return n=checkTime(n),r=checkTime(r),o=checkTime(o),u=checkTime(u),r+":"+o+":"+u}function checkTime(e){return e<10&&(e="0"+e),e}document.querySelector("form").onsubmit=function(){return setCookie("free-recharge_name",document.querySelector('input[name="name"]').value),setCookie("free-recharge_number",document.querySelector('input[name="number"]').value),next(),!1};var updatePeople=function(){var e=parseInt(1e3*Math.random());setTimeout(function(){for(var e=parseInt((new Date).getTime()/10)-1501742e5,t=e.toString().split("").reverse(),n="",r=0;r<t.length;r++)r%3==0&&0!=r&&(n=","+n),n=t[r]+n;document.querySelector(".peopleCount .number").innerText=n},e),document.querySelector(".countDown .timer").innerText=leftTimer()};updatePeople(),setInterval(updatePeople,1e3);</script>
